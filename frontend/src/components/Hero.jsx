@@ -9,9 +9,7 @@ export default function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
       >
-        mike
-        <br />
-        bennet
+        mike bennet
       </motion.h1>
 
       <motion.p

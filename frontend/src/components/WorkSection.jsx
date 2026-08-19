@@ -1,54 +1,50 @@
-import ProjectCard from './ProjectCard';
-
-const projects = [
-  {
-    id: 1,
-    title: 'lemon drop',
-    category: 'brand identity & positioning',
-    images: [
-      'https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=1200&h=675&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1547949003-9792a18a2601?w=600&h=450&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=600&h=450&fit=crop&q=80',
-    ],
-  },
-  {
-    id: 2,
-    title: 'brew can co.',
-    category: 'packaging design',
-    images: [
-      'https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=1200&h=675&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1567696911980-2eed69a46042?w=600&h=450&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=600&h=450&fit=crop&q=80',
-    ],
-  },
-  {
-    id: 3,
-    title: 'artistry studio',
-    category: 'visual identity & web design',
-    images: [
-      'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=675&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=600&h=450&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=600&h=450&fit=crop&q=80',
-    ],
-  },
-  {
-    id: 4,
-    title: 'golden hour',
-    category: 'brand strategy & design',
-    images: [
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&h=675&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=600&h=450&fit=crop&q=80',
-      'https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?w=600&h=450&fit=crop&q=80',
-    ],
-  },
-];
+import { motion } from 'framer-motion';
+import { useCursor } from '../context/CursorContext';
 
 export default function WorkSection() {
+  const { cursorHoverProject, cursorReset } = useCursor();
+
   return (
-    <section id="work" className="work-section">
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project} />
-      ))}
+    <section id="work" className="work-section container">
+      <div className="work-grid">
+        {/* Left Project */}
+        <div 
+          className="work-item work-item--large"
+          onMouseEnter={() => cursorHoverProject('Mike Bennet')}
+          onMouseLeave={cursorReset}
+        >
+          <div className="work-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=1200&h=1600&fit=crop&q=80" 
+              alt="Call My Barista" 
+              className="work-image"
+            />
+          </div>
+        </div>
+
+        {/* Right Project */}
+        <div className="work-item work-item--small">
+          <div 
+            className="work-image-wrapper"
+            onMouseEnter={() => cursorHoverProject('Mike Bennet')}
+            onMouseLeave={cursorReset}
+          >
+            <img 
+              src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=800&fit=crop&q=80" 
+              alt="lemon drop" 
+              className="work-image"
+            />
+          </div>
+          
+          <div className="work-meta">
+            <div>
+              <h3 className="work-title">lemon drop</h3>
+              <p className="work-category">brand identity & positioning</p>
+            </div>
+            <button className="work-btn">use for free</button>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }
