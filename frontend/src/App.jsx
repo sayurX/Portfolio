@@ -1,23 +1,22 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
+import Layout from './components/Layout';
+import Home from './pages/Home';
 import WorkSection from './components/WorkSection';
 import AboutSection from './components/AboutSection';
 import ContactSection from './components/ContactSection';
-import CustomCursor from './components/CustomCursor';
-import { CursorProvider } from './context/CursorContext';
 
 export default function App() {
   return (
-    <CursorProvider>
-      <CustomCursor />
-      <Navbar />
-      <main>
-        <Hero />
-        <WorkSection />
-        <AboutSection />
-        <ContactSection />
-      </main>
-    </CursorProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="work" element={<WorkSection />} />
+          <Route path="about" element={<AboutSection />} />
+          <Route path="contact" element={<ContactSection />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }

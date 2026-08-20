@@ -1,9 +1,10 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const navLinks = [
-  { label: 'work', href: '#work' },
-  { label: 'about me', href: '#about' },
-  { label: 'start a project', href: '#contact', isCta: true },
+  { label: 'work', href: '/work' },
+  { label: 'about me', href: '/about' },
+  { label: 'start a project', href: '/contact', isCta: true },
 ];
 
 export default function Navbar() {
@@ -15,19 +16,19 @@ export default function Navbar() {
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
     >
       <div className="navbar__inner">
-        <a href="#" className="navbar__logo">
+        <Link to="/" className="navbar__logo">
           sayura thejan
-        </a>
+        </Link>
 
         <div className="navbar__links">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
-              href={link.href}
+              to={link.href}
               className={`navbar__link ${link.isCta ? 'navbar__link--cta' : ''}`}
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>
