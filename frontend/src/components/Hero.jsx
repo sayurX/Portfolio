@@ -9,7 +9,7 @@ export default function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
       >
-        mike bennet
+        sayura thejan
       </motion.h1>
 
       <motion.p
@@ -18,8 +18,7 @@ export default function Hero() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
       >
-        i design strategic brand identities that help small businesses
-        and startups stand out and connect with their customers.
+        i build scalable web applications and intuitive user interfaces that help businesses grow and engage their audience.
       </motion.p>
     </section>
   );

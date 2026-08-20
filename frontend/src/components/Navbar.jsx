@@ -16,7 +16,7 @@ export default function Navbar() {
     >
       <div className="navbar__inner">
         <a href="#" className="navbar__logo">
-          mike bennet
+          sayura thejan
         </a>
 
         <div className="navbar__links">

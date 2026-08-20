@@ -10,13 +10,13 @@ export default function WorkSection() {
         {/* Left Project */}
         <div 
           className="work-item work-item--large"
-          onMouseEnter={() => cursorHoverProject('Mike Bennet')}
+          onMouseEnter={() => cursorHoverProject('Sayura Thejan')}
           onMouseLeave={cursorReset}
         >
           <div className="work-image-wrapper">
             <img 
-              src="https://images.unsplash.com/photo-1581006852262-e4307cf6283a?w=1200&h=1600&fit=crop&q=80" 
-              alt="Call My Barista" 
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=1600&fit=crop&q=80" 
+              alt="Code Interface" 
               className="work-image"
             />
           </div>
@@ -26,22 +26,22 @@ export default function WorkSection() {
         <div className="work-item work-item--small">
           <div 
             className="work-image-wrapper"
-            onMouseEnter={() => cursorHoverProject('Mike Bennet')}
+            onMouseEnter={() => cursorHoverProject('Sayura Thejan')}
             onMouseLeave={cursorReset}
           >
             <img 
-              src="https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&h=800&fit=crop&q=80" 
-              alt="lemon drop" 
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=800&fit=crop&q=80" 
+              alt="Data Dashboard" 
               className="work-image"
             />
           </div>
           
           <div className="work-meta">
             <div>
-              <h3 className="work-title">lemon drop</h3>
-              <p className="work-category">brand identity & positioning</p>
+              <h3 className="work-title">saas dashboard</h3>
+              <p className="work-category">full stack web application</p>
             </div>
-            <button className="work-btn">use for free</button>
+            <button className="work-btn">view github</button>
           </div>
         </div>
       </div>

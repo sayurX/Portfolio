@@ -13,7 +13,7 @@ export default function AboutSection() {
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
       >
-        i'm Mike Bennet, a brand designer based in Portland, Oregon. I work with small business owners and startup founders who want a brand identity that positions them as the premium choice in their market.
+        i'm Sayura Thejan, a full stack developer. I work with startups and businesses who want robust, scalable, and high-performance applications that deliver exceptional user experiences.
       </motion.h2>
 
       <div className="about__grid">
@@ -38,7 +38,7 @@ export default function AboutSection() {
         >
           <p className="about__label">why work with me</p>
           <p className="about__text">
-            i believe the best brands come from true collaboration. when we work together, you're not just getting a designer, you're getting a strategic partner who takes time to understand your business, your customers, and your goals.
+            i believe the best applications come from deep technical understanding and collaboration. when we work together, you're getting a strategic engineering partner who takes time to understand your architecture, user needs, and business goals.
           </p>
           <button className="work-btn" style={{ marginTop: '2rem' }}>download resume</button>
         </motion.div>
@@ -49,9 +49,9 @@ export default function AboutSection() {
           animate={isInView ? { y: 0, opacity: 1 } : {}}
           transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
         >
-          <p className="about__label">when i'm not designing</p>
+          <p className="about__label">when i'm not coding</p>
           <p className="about__text">
-            you'll find me exploring portland's coffee scene, hiking around mt. hood, or shooting film photography. i'm always looking for inspiration in unexpected places, whether that's vintage typography at a flea market or color combinations in nature.
+            you'll find me exploring new technologies, contributing to open source, or enjoying a good cup of coffee. i'm always looking for inspiration in unexpected places to solve complex engineering challenges.
           </p>
         </motion.div>
       </div>

@@ -24,8 +24,8 @@ export default function ContactSection() {
 
       <footer className="footer container">
         <div className="footer__left">
-          <p>email: mike@mikebennet.design</p>
-          <p>based in: portland, oregon</p>
+          <p>email: hello@sayurathejan.com</p>
+          <p>based in: colombo, sri lanka</p>
           <p>available for: freelance projects & full-time</p>
         </div>
         <div className="footer__right">
@@ -37,9 +37,9 @@ export default function ContactSection() {
           </div>
           <div className="footer__col">
             <p className="footer__label">socials</p>
-            <a href="#">instagram</a>
-            <a href="#">x(twitter)</a>
+            <a href="#">github</a>
             <a href="#">linkedin</a>
+            <a href="#">x(twitter)</a>
           </div>
         </div>
       </footer>
