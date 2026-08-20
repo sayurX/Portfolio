@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <Hero />
       <WorkSection />
-      <AboutSection />
+      <AboutSection simple={true} />
       <ContactSection />
     </>
   );

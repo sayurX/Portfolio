@@ -1,5 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import getTouchImage from '../assets/gettouch.png';
 
 export default function ContactSection() {
   const ref = useRef(null);
@@ -16,7 +17,7 @@ export default function ContactSection() {
         >
           <span className="contact__big-text">get in</span>
           <div className="contact__big-image">
-            <img src="https://images.unsplash.com/photo-1622279457486-62dcc4a631d6?w=400&h=300&fit=crop&q=80" alt="tennis ball" />
+            <img src={getTouchImage} alt="Get in touch" />
           </div>
           <span className="contact__big-text">touch</span>
         </motion.div>
